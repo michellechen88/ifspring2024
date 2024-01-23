@@ -2,6 +2,10 @@ div {
     margin: 50px 200px 200px;
 }
 
+em {
+    text-align: center;
+}
+
 h1{
     background: pink;
     color: rgb(255, 255, 239);
