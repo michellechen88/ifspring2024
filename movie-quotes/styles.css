@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    color: white;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+h1{
+    font-size: 40pt;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 20pt;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: rgb(185, 185, 185);
+}
+
+h3{
+    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 11pt;
+    color: rgb(100, 211, 100);
+    margin-bottom: 8px;
+}
+
+h4{
+    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: rgb(149, 149, 149);
+    margin-bottom: 40px;
+}
+
+p{
+    font-size: 14pt;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
