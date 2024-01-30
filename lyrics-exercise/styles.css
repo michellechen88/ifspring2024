@@ -1,0 +1,44 @@
+body{
+    background-image: linear-gradient(rgb(200, 229, 164) 0%, rgb(200, 229, 164) 16%, rgb(255, 246, 224) 16%, rgb(255, 246, 224) 100%);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-top: 60px;
+}
+
+.songHeader{
+    text-align: center;
+}
+
+h1{
+    font-size: 30pt;
+}
+
+h2{
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+
+.album{
+    color: rgb(37, 122, 45);
+    opacity: 70%;
+    padding-bottom: 100px;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17pt;
+    text-align: center;
+    font-style: italic;
+    opacity: 45%;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17pt;
+    text-align: center;
+}
