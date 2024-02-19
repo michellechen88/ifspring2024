@@ -10,6 +10,10 @@ body{
     color: grey;
 }
 
+.picwithchinese{
+    width: 30%;
+}
+
 img{
     max-width: 75%;
     height: auto;
