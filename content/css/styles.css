@@ -1,0 +1,48 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+    width: auto;
+    padding: 0rem 10rem;
+}
+
+.optionaltoppings, .recipecitation{
+    font-style: italic;
+    color: grey;
+}
+
+.picwithchinese{
+    width: 30%;
+}
+
+img{
+    max-width: 75%;
+    height: auto;
+    padding: 20px 0px;
+}
+
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: rgb(65, 34, 4);
+}
+
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(65, 34, 4);
+}
+
+.servings, .time{
+    display: inline-block;
+    font-variant: small-caps;
+    color: rgb(255, 251, 240);
+    background-color: rgb(174, 126, 92);
+    padding: 0.3rem 0.65rem;
+}
+
+.servings{
+    margin-top: 0;
+}
+
+li{
+    margin: 1rem 0rem 1rem 0rem;
+}
