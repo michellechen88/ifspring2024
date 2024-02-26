@@ -1,0 +1,135 @@
+body{
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+h1{
+    font-size: 80px;
+    margin: 0;
+    line-height: 1;
+    margin-bottom: 10px;
+    color: rgb(66, 28, 0);
+}
+
+h2{
+    font-size: 30px;
+    margin-top: 0;
+    color: rgb(66, 28, 0);
+}
+
+h3{
+    padding-top: 11px;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 30px;
+    color: rgb(66, 28, 0);
+}
+
+p{
+    font-size: 18px;
+    color: rgb(66, 28, 0);
+}
+
+.columncontainer{
+    /*background-color: rgba(255, 0, 0, .25);*/
+    margin: auto;
+    width: 960px;
+}
+
+header{
+    background-image: url("../images/blurredheader.jpg");
+    background-size: cover;
+}
+
+header .columncontainer{
+    padding: 165px 0 160px 0;
+    text-align: center;
+}
+
+.textheavy{
+    background-color: rgb(255, 242, 217);
+    padding-bottom: 20px;
+    padding-top: 30px;
+    margin-top: 0;
+}
+
+.textheavy .columncontainer{
+    padding-bottom: 18px;
+}
+
+.textheavy p{
+    line-height: 25px;
+}
+
+.textheavy img{
+    float: right;
+    margin-left: 44px;
+    margin-bottom: 30px;
+}
+
+.images{
+    padding-top: 30px;
+    padding-bottom: 51px;
+    margin-top: 0;
+    background-color: rgb(241, 57, 128);
+}
+
+.images h3{
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+}
+
+h4{
+    font-size: 20px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+.images p{
+    color: rgb(255, 218, 232);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 175px 175px;
+    justify-items: start;
+    column-gap: 31px;
+}
+
+.grid img{
+    margin: 0 12px 10px 0;
+    float: left;
+}
+
+.grid p{
+    margin-top: 8px;
+}
+
+.centered{
+    background-color: rgb(255, 242, 217);
+    padding-bottom: 75px;
+}
+
+.lastparagraph{
+    display: block;
+    text-align: center;
+    padding: 0px 120px;
+    line-height: 1.4;
+    font-size: 26px;
+}
+
+.centered .columncontainer{
+    padding-top: 30px;
+}
+
+footer{
+    padding: 22px 0;
+    background-color: rgb(136, 92, 61);
+}
+
+footer p{
+    font-size: 18px;
+    margin-top: 22px;
+    color: rgb(255, 242, 217);
+}
