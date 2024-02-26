@@ -65,6 +65,8 @@ header .columncontainer{
     float: right;
     margin-left: 44px;
     margin-bottom: 30px;
+    border: solid 2px;
+    border-color: rgb(66, 28, 0);
 }
 
 .images{
