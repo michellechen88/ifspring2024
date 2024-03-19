@@ -1,0 +1,58 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+    width: 800px;
+    margin: auto;
+}
+
+.blurb{
+    text-align: center;
+}
+
+.container{
+    display: block;
+    position: relative;
+}
+
+.optionaltoppings, .recipecitation{
+    font-style: italic;
+    color: grey;
+}
+
+
+
+.picwithchinese{
+    width: 30%;
+}
+
+img{
+    max-width: 75%;
+    height: auto;
+    padding: 20px 0px;
+}
+
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: rgb(65, 34, 4);
+    text-align: center;
+}
+
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(65, 34, 4);
+}
+
+.cookingdetails{
+    display: flex;
+    color: rgb(255, 251, 240);
+}
+
+.cookingdetails p{
+    background-color: rgb(174, 126, 92);
+    text-align: center;
+}
+
+li{
+    margin: 1rem 0rem 1rem 0rem;
+}
