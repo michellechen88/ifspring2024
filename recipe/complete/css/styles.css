@@ -3,10 +3,48 @@ body{
     box-sizing: content-box;
     width: 800px;
     margin: auto;
+    font-size: 2.25rem;
+    color: rgb(65, 34, 4);
+}
+
+section{
+    width: 700px;
+    margin: auto;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(255, 248, 225);
+    padding: 100px 50px 80px 50px;
+    text-align: center;
+}
+
+header img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem;
 }
 
 .blurb{
-    text-align: center;
+    font-size: 2.5rem;
+}
+
+.cookingdetails{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    color: rgb(255, 251, 240);
+}
+
+.cookingdetails p{
+    background-color: rgb(174, 126, 92);
+    font-size: 1.75rem;
+    padding: 10px 5px 10px 5px;
 }
 
 .container{
@@ -19,40 +57,121 @@ body{
     color: grey;
 }
 
-
-
-.picwithchinese{
-    width: 30%;
-}
-
 img{
-    max-width: 75%;
+    max-width: 100%;
     height: auto;
-    padding: 20px 0px;
-}
-
-h1{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
-    color: rgb(65, 34, 4);
-    text-align: center;
 }
 
 h2{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(65, 34, 4);
+    font-size: 3.5rem;
+    margin-top: 10rem;
 }
 
-.cookingdetails{
-    display: flex;
-    color: rgb(255, 251, 240);
-}
-
-.cookingdetails p{
-    background-color: rgb(174, 126, 92);
-    text-align: center;
+ol{
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 10px;
+    margin: -1rem 0px 1rem 0px;
 }
 
 li{
-    margin: 1rem 0rem 1rem 0rem;
+    margin: 4rem 0rem 1rem 0rem;
+    list-style-type: none;
+}
+
+label{
+    font-size: 2.25rem;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+input{
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+footer{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (min-width: 480px){
+    .instructions{
+        margin-bottom: 0;
+    }
+
+    body{
+        font-size: 1.75rem;
+    }
+
+    h1{
+        font-size:3.5rem;
+    }
+    
+    .blurb{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    label{
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 640px){
+
+    body{
+        font-size: 1.25rem;
+        width: 100%;
+    }
+
+    header{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 1000px;
+        align-items: center;
+        justify-content: center;
+        padding-left: 260px;
+        padding-right: 260px;
+    }
+
+    h1{
+        font-size: 2.25rem;
+    }
+
+    .blurb{
+        font-size: 1.25rem;
+    }
+
+    .cookingdetails p{
+        font-size: 1rem;
+    }
+
+    h2{
+        font-size: 1.75rem;
+        margin-top: 5rem;
+    }
+
+    label{
+        font-size: 1.25rem;
+    }
+
+    input{
+        height: 1.25rem;
+        width: 1.25rem;
+    }
+
+    li{
+        margin: 2.5rem 0rem 1rem 0rem;
+    }
+
 }
