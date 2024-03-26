@@ -26,8 +26,6 @@ h1 {
     text-align: center;
 }
 
-
-
 a#btn_spotify {
     display: inline-block;
     height: 50px;
@@ -143,4 +141,169 @@ a#btn_indiegogo:hover:before {
 a#btn_indiegogo span {
     position: relative;
     z-index: 10;
+}
+
+/* cartoon network button */
+
+.button-container.cartoon{
+    position: relative;
+}
+
+a#cartoon .logo{
+    max-width: 75%;
+    height: auto;
+}
+
+a#cartoon {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#characters img{
+    display: inline-block;
+    position: absolute;
+    translate: -50% -250%;
+    max-width: 15%;
+    height: auto;
+    z-index: -1;
+}
+
+#powgirls {
+    left: 100px;
+}
+
+#adventure {
+    left: 110px;
+    bottom: -10px;
+}
+
+#gumball {
+    right: 60px;
+    bottom: -70px;
+    transform: scale(.7);
+}
+
+#eds{
+    right: 85px;
+}
+
+#stevenuni{
+    bottom: -40px;
+    left: 125px;
+    z-index: -2;
+}
+
+a#cartoon:hover{
+    transform: scale(.8) translateY(-50%);
+    transition: all .5s;
+}
+
+#cartoon:hover #characters{
+    animation: slide .5s forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide{
+    from{
+        top: 50%;
+    }
+
+    to{
+        top: 25px;
+    }
+
+    100%{
+        transform: scale(2.5);
+    }
+}
+
+a#cartoon:active .logo{
+    background-color: #ffffff;
+    filter: invert(1);
+}
+
+/* apple button */
+
+a#apple {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    box-shadow: 0px 0px 30px 5px rgba(59, 59, 59, 0.08);
+    margin: auto;
+    margin-top: 25px;
+    padding-top: 83px;
+    background-color: #ffffff;
+    color: #6e6e73;
+    text-align: center;
+    
+}
+
+#apple i{
+    transform: scale(8);
+}
+
+a#apple:hover{
+    color: #000000;
+    box-sizing: border-box;
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px 5px rgba(59, 59, 59, 0.1);
+}
+
+/* michael kors */
+
+#mk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    width: 150px;
+    height: auto;
+    margin-top: 110px;
+    left: 20%;
+    padding: 15px 15px 15px 15px;
+    /* background-color: #e29595; */
+    overflow: hidden;
+}
+
+#mk img{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    z-index: 2;
+}
+
+#mk:hover:before{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 70%;
+    background-color: #000;
+    animation: rotate 2s linear .5;
+}
+
+#mk::after{
+    content: '';
+    position: absolute;
+    background: #fff;
+    inset: 2px;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#mk:active{
+    filter: invert(1);
+    transition: filter .5s;
 }
