@@ -26,6 +26,10 @@ h1 {
     text-align: center;
 }
 
+a{
+    text-decoration: none;
+}
+
 a#btn_spotify {
     display: inline-block;
     height: 50px;
@@ -352,3 +356,153 @@ a#apple:hover{
     transition: all .25s;
     filter: invert(0);
 }
+
+/* the color run */
+#color-run span{
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    top: 40%;
+}
+
+#color-run:hover span{
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 2s;
+}
+
+/* fitbit */
+#fitbit{
+    position: relative;
+    display: block;
+    top: 37%;
+    left: 15px;
+    width: 220px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#fitbit:hover{
+    background-color: #ebd7a9;
+    border-radius: 20px;
+    filter: invert(1);
+    transition: all .5s;
+}
+
+#fitbit:active {
+    animation: slidein .5s forwards 1;
+  }
+  
+@keyframes slidein {
+    from {
+      margin-left: 0%;
+    }
+  
+    to {
+      margin-left: 100%;
+    }
+  }
+  
+
+/* exploding kittens */
+#exploding-kit{
+    position: relative;
+    top: 25%;
+}
+
+#exploding-kit img{
+    max-width: 50%;
+    border-radius: 20%;
+}
+
+#exploding-kit:hover img{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    transform: scale(1.2);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+/* instagram */
+#ig{
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 40%;
+}
+
+.icons{
+    transform: scale(3);
+    position: absolute;
+    padding-left: 4px;
+    padding-right: 4px;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    color: #ffffff;
+}
+
+#ig:hover #heart{
+    transform: scale(1.15);
+    transition: all .5s;
+    color: #ffbebe;
+}
+
+/* npr */
+#npr{
+    position: relative;
+    top: 20%;
+}
+
+#npr p{
+    display: inline-block;
+    font-family: "Allerta", sans-serif;
+    font-size: 50px;
+    height: 70px;
+    color: #000;
+}
+
+#n:hover{
+    background-color: #D62021;
+    color: #ffffff;
+    padding-left: 13px;
+    padding-right: 13px;
+    transition: all .5s;
+}
+
+#p:hover{
+    background-color:#000000;
+    color: #ffffff;
+    padding-left: 13px;
+    padding-right: 13px;
+    transition: all .5s;
+}
+
+#r:hover{
+    background-color: #237BBD;
+    color: #ffffff;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: all .5s;
+}
+
+
