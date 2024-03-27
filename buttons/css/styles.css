@@ -307,3 +307,48 @@ a#apple:hover{
     filter: invert(1);
     transition: filter .5s;
 }
+
+/* lyft */
+
+#lyft i{
+    position: absolute;
+    transform: scale(4);
+    color: #FF00BF;
+}
+
+#lyft{
+    position: relative;
+    display: inline-block;
+    top: 45%;
+    left: -5%;
+}
+
+#lyft:hover:before{
+    content: 'Let\'s Ride';
+    display: block;
+    position: absolute;
+    width: 80px;
+    top: 30px;
+    right: -48px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+    color: #352384;
+}
+
+#lyft:hover{
+    top: 40%;
+    transition: all .5s;
+}
+
+/* samsung */
+
+#samsung img{
+    max-width: 100%;
+    filter: invert(1);
+}
+
+#samsung:hover img{
+    /* transform: scale(1.1); */
+    transition: all .25s;
+    filter: invert(0);
+}
