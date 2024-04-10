@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+
+#loading_screen{
+    background-image: url(../../photos/);
+    background: #ffefd8 url(../../photos/Avatar_The_Last_Airbender_logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: ; use this if loader is too big*/
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#increase_time{
+    display: none;
+}
+
+.nav{
+    background-color: #8d2106;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
