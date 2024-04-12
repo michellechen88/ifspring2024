@@ -1,21 +1,92 @@
 body{
     margin: 0;
+    font-family: "franklin-gothic-atf", sans-serif;
+    font-weight: 400;
+}
+header{
+    background-color: #8d2106;
+}
+
+header img{
+    opacity: 60%;
+    width: 100%;
+    height: 500px;
+}
+
+main{
+    width: 60%;
+    margin: auto;
+}
+
+h2, a{
+    font-family: "carta-marina", sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 60px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 #loading_screen{
-    background-image: url(../../photos/);
-    background: #ffefd8 url(../../photos/Avatar_The_Last_Airbender_logo.png);
+    background-color: #ffefd8;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: ; use this if loader is too big*/
+    background-size: cover;
     height: 100%;
     width: 100%;
     position: fixed;
+    z-index: 99;
+}
+
+#loader-bg{
+    opacity: 35%;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 100;
+}
+
+#loader-logo{
+    display: block;
+    position: fixed;
+    width: 30%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+}
+
+.loader-symbols img{
+    width: 15%;
+    height: auto;
+}
+
+.loader-symbols{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-34%) translateY(100%);
+    z-index: 101;
 }
 
 #increase_time{
     display: none;
+}
+
+#nav-logo{
+    width: 80px;
+    position: relative;
+    filter: invert(100);
 }
 
 .nav{
@@ -23,4 +94,14 @@ body{
     text-align: center;
     padding-top: 2%;
     padding-bottom: 2%;
+    width: 100%;
+}
+
+.nav a{
+    padding: 0 20px;
+}
+
+.setting img{
+    width: 100%;
+    padding-bottom: 5%;
 }

@@ -3,20 +3,60 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ATLA Initial Build</title>
+        <link rel="stylesheet" href="https://use.typekit.net/cwa5njv.css">
+        <link rel="stylesheet" href="https://use.typekit.net/cwa5njv.css">
         <link rel="stylesheet"  href="css/styles.css">
     </head>
     <body>
-        <div id="loading_screen"></div>
-        <section>
-            <div class="nav">
+        <div id="loading_screen">
+            <img id="loader-bg" src="../photos/korra-404-14.png">
+            <img id="loader-logo" src="../photos/Avatar_The_Last_Airbender_logo.png">
+            <div class="loader-symbols">
+                <img src="../photos/fire.gif">
+                <img src="../photos/air.gif">
+                <img src="../photos/water.gif">
+                <img src="../photos/earth.gif">
+            </div>
+        </div>
+        <section class="nav">
+            <div>
+                <a href="index.html">
+                    <img id="nav-logo" src="../photos/Avatar_The_Last_Airbender_logo.png">
+                </a>
                 <a href="index.html">Home</a>
                 <a href="tribes.html">Characters</a>
-                <a href="media.html">Media</a>
+                <a href="development.html">Development</a>
                 <a href="reviews.html">Reviews</a>
                 <a href="sources.html">Sources</a>
             </div>
         </section>
-        <section class="home">
+        <header>
+            <img class="slides" src="../photos/landscapebysea.jpeg">
+            <img class="slides" src="../photos/firenation.jpg">
+            <img class="slides" src="../photos/watertribe.webp">
+            <img class="slides" src="../photos/earthkingdom.jpg">
+        </header>
+
+        <!-- automatic slider -->
+        <script>
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 3000); // Change image every 2 seconds
+            }
+        </script>
+
+        <main>
+            <section class="home">
             <div class="synopsis">
                 <h2>synopsis</h2>
                 <p>A century ago, young Avatar Aang, afraid of his new responsibilities, fled from his home and was forced into the ocean by a storm. He encased himself and his sky bison Appa in suspended animation in an iceberg near the South Pole. Shortly afterward, Fire Lord Sozin, the ruler of the Fire Nation, launched a world war to expand his nation's empire. Knowing that the Avatar must be an Air Nomad, he carried out a genocide against the Air Nomads, which he timed with the arrival of a comet that gives firebenders tremendous power. A hundred years later, siblings Katara and Sokka, teenagers of the Southern Water Tribe, accidentally discover Aang and revive him.</p>
@@ -29,19 +69,25 @@
             </div>
             <div class="setting">
                 <h2>setting</h2>
+                <img src="../photos/tribe-map.jpg">
                 <p>Avatar: The Last Airbender is set in a world where human civilization consists of four nations, named after the four classical elements: the Water Tribes, the Earth Kingdom, the Fire Nation, and the Air Nomads. In each nation, certain people, known as "benders" (waterbenders, earthbenders, firebenders, and airbenders), have the ability to telekinetically manipulate and control the element corresponding to their nation, using gestures based on Chinese martial arts. The "Avatar" is the only individual with the ability to bend all four elements.</p>
 
                 <p>The Avatar is an international arbiter whose duty is to maintain harmony among the four nations, and act as a mediator between humans and spirits. When the Avatar dies, their spirit is reincarnated in a new body, who will be born to parents in the next nation in a set order known as the Avatar cycle: Fire, Air, Water, and Earth. By tradition, the new Avatar will travel the world to learn all four bending arts, after which they will begin in earnest their role as global peacekeeper. The Avatar can enter a condition known as the "Avatar State", in which they temporarily gain the skills and knowledge of all their past incarnations. Although this is when they are at their most powerful, if the Avatar was ever killed while in the Avatar State, the reincarnation cycle would be broken and the Avatar would cease to exist.</p>
             </div>
         </section>
+        <section>
+            <img src="../photos/Aang_profile.webp">
+            <a href="tribes.html">Characters</a>
+        </section>
+        </main>
         <!-- increase  loading time of page -->
-        <!-- <div id="increase_time">
+        <div id="increase_time">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/OCIsqgJ8bXE?si=OfqohGKl039kVoLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/OCIsqgJ8bXE?si=OfqohGKl039kVoLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/OCIsqgJ8bXE?si=OfqohGKl039kVoLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/OCIsqgJ8bXE?si=OfqohGKl039kVoLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div> -->
-        <!-- preloader screen -->
+        </div>
+        <!-- preloader screen script , figure out how to fade out after loading is complete-->
         <script> 
             var loader = document.getElementById("loading_screen");
 
