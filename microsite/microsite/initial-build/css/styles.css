@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    font-family: "franklin-gothic-atf", sans-serif;
+    font-weight: 400;
+}
+
+h2, a{
+    font-family: "carta-marina", sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 50px;
+    padding-top: 8%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* pre-loader */
+
+#loading_screen{
+    background-color: #ffefd8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+#loader-bg{
+    opacity: 35%;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+#loader-logo{
+    display: block;
+    position: fixed;
+    width: 30%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+}
+
+.loader-symbols img{
+    width: 15%;
+    height: auto;
+}
+
+.loader-symbols{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-34%) translateY(100%);
+    z-index: 101;
+}
+
+#increase_time{
+    display: none;
+}
+
+/* nav bar */
+
+#nav-logo{
+    width: 80px;
+    position: relative;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav div{
+    background-color: #8d2106;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.nav a{
+    padding: 0 20px;
+}
+
+#home:hover{
+    font-size: 22px;
+    text-shadow: 0 0 10px #FFFFFF;
+    transition: all .5s;
+}
+
+#characters:hover{
+    font-size: 22px;
+    text-shadow: 0 0 10px #FFFFFF;
+    transition: all .5s;
+}
+
+#development:hover{
+    font-size: 22px;
+    text-shadow: 0 0 10px #FFFFFF;
+    transition: all .5s;
+}
+
+#reviews:hover{
+    font-size: 22px;
+    text-shadow: 0 0 10px #FFFFFF;
+    transition: all .5s;
+}
+
+#sources:hover{
+    font-size: 22px;
+    text-shadow: 0 0 10px #FFFFFF;
+    transition: all .5s;
+}
+
+/* header */
+
+.slides{
+    /* opacity: 10%; */
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    z-index: -100;
+    top:0;
+}
+
+#banner-logo{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%) scale(40%);
+    z-index: -99;
+}
+
+/* main content */
+
+main{
+    background-color: blanchedalmond;
+    max-width: 100%;
+    margin-top: 500px;
+}
+
+.home{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 20%;
+}
+
+.setting img{
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+/* next page button */
+
+/* footer */
+footer{
+    background-color: #8d2106;
+    color: #FFFFFF;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+footer p{
+    position: relative;
+    left: 5%;
+}

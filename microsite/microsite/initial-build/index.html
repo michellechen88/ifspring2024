@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ATLA Home</title>
+        <link rel="stylesheet" href="https://use.typekit.net/cwa5njv.css">
+        <link rel="stylesheet" href="https://use.typekit.net/cwa5njv.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="loading_screen">
+            <img id="loader-bg" src="../photos/korra-404-14.png">
+            <img id="loader-logo" src="../photos/Avatar_The_Last_Airbender_logo.png">
+            <div class="loader-symbols">
+                <img src="../photos/fire.gif">
+                <img src="../photos/air.gif">
+                <img src="../photos/water.gif">
+                <img src="../photos/earth.gif">
+            </div>
+        </div>
+        <section class="nav">
+            <div>
+                <a href="index.html">
+                    <img id="nav-logo" src="../photos/white_logo.png">
+                </a>
+                <a id="home" href="index.html">Home</a>
+                <a id="characters" href="characters.html">Characters</a>
+                <a id="development" href="development.html">Development</a>
+                <a id="reviews" href="reviews.html">Reviews</a>
+                <a id="sources" href="sources.html">Sources</a>
+            </div>
+        </section>
+        <header>
+            <img id="banner-logo" src="../photos/white_logo.png">
+            <div class="slider">
+                <img class="slides" src="../photos/landscapebysea.jpeg">
+                <img class="slides" src="../photos/firenation.jpg">
+                <img class="slides" src="../photos/watertribe.webp">
+                <img class="slides" src="../photos/earthkingdom.jpg">
+            </div>
+        </header>
+
+        <!-- automatic slider -->
+        <script>
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 3000); // Change image every 2 seconds
+            }
+        </script>
+
+        <main>
+            <section class="home">
+            <div class="synopsis">
+                <h2>synopsis</h2>
+                <p>A century ago, young Avatar Aang, afraid of his new responsibilities, fled from his home and was forced into the ocean by a storm. He encased himself and his sky bison Appa in suspended animation in an iceberg near the South Pole. Shortly afterward, Fire Lord Sozin, the ruler of the Fire Nation, launched a world war to expand his nation's empire. Knowing that the Avatar must be an Air Nomad, he carried out a genocide against the Air Nomads, which he timed with the arrival of a comet that gives firebenders tremendous power. A hundred years later, siblings Katara and Sokka, teenagers of the Southern Water Tribe, accidentally discover Aang and revive him.</p>
+
+                <p>In the first season, Aang travels with Katara and Sokka to the Northern Water Tribe so he can learn waterbending and be prepared to defeat the Fire Nation. Prince Zuko, the banished son of the current Fire Lord Ozai, pursues them, accompanied by his uncle Iroh, hoping to capture the Avatar in order to restore his honor. Aang is also pursued by Zhao, a Fire Nation admiral aspiring to win Ozai's favor. When his navy attacks the Northern Water Tribe, Zhao kills the moon spirit; Yue, the princess of the tribe, sacrifices her life to revive it, and Aang drives off the enemy fleet.</p>
+
+                <p>In the second season, Aang learns earthbending from Toph Beifong, a blind twelve-year-old earthbending prodigy. Zuko and Iroh, now fugitives from the Fire Lord, become refugees in the Earth Kingdom, eventually settling in its capital Ba Sing Se. Both groups are pursued by Azula, Zuko's younger sister and a firebending prodigy. Aang's group travels to Ba Sing Se to seek the Earth King's support for an attack on the Fire Nation timed to an upcoming solar eclipse, during which firebenders will be powerless. Azula instigates a coup d'état, bringing the capital under Fire Nation control, and Zuko sides with his sister. Aang is fatally wounded by Azula, but he is revived by Katara.</p>
+
+                <p>In the third season, Aang and his allies invade the Fire Nation capital during the solar eclipse, but are forced to retreat. Zuko abandons the Fire Nation to join Aang and teach him firebending. Aang, raised by monks to respect all life, wrestles with the possibility that he will have to kill Ozai to end the war. When Sozin's comet returns, Aang confronts Ozai and uses his Avatar powers to strip Ozai of his firebending ability; meanwhile, Aang's friends liberate Ba Sing Se, destroy the Fire Nation airship fleet, and capture Azula. Zuko is crowned the new Fire Lord and the war comes to an end.</p>
+            </div>
+            <div class="setting">
+                <h2>setting</h2>
+                <img src="../photos/tribe-map.jpg">
+                <p>Avatar: The Last Airbender is set in a world where human civilization consists of four nations, named after the four classical elements: the Water Tribes, the Earth Kingdom, the Fire Nation, and the Air Nomads. In each nation, certain people, known as "benders" (waterbenders, earthbenders, firebenders, and airbenders), have the ability to telekinetically manipulate and control the element corresponding to their nation, using gestures based on Chinese martial arts. The "Avatar" is the only individual with the ability to bend all four elements.</p>
+
+                <p>The Avatar is an international arbiter whose duty is to maintain harmony among the four nations, and act as a mediator between humans and spirits. When the Avatar dies, their spirit is reincarnated in a new body, who will be born to parents in the next nation in a set order known as the Avatar cycle: Fire, Air, Water, and Earth. By tradition, the new Avatar will travel the world to learn all four bending arts, after which they will begin in earnest their role as global peacekeeper. The Avatar can enter a condition known as the "Avatar State", in which they temporarily gain the skills and knowledge of all their past incarnations. Although this is when they are at their most powerful, if the Avatar was ever killed while in the Avatar State, the reincarnation cycle would be broken and the Avatar would cease to exist.</p>
+            </div>
+        </section>
+        </main>
+        <footer>
+            <p>Creative Director: Michelle Kwan</p>
+            <p>Designer: Michelle Chen</p>
+        </footer>
+        <!-- increase  loading time of page -->
+        <!-- <div id="increase_time">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OCIsqgJ8bXE?si=OfqohGKl039kVoLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OCIsqgJ8bXE?si=OfqohGKl039kVoLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OCIsqgJ8bXE?si=OfqohGKl039kVoLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OCIsqgJ8bXE?si=OfqohGKl039kVoLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div> -->
+        <!-- preloader screen script , figure out how to fade out after loading is complete-->
+        <script> 
+            var loader = document.getElementById("loading_screen");
+
+            window.addEventListener("load", function(){
+                loader.style.display = "none";
+            })
+        </script>
+    </body>
+</html>
