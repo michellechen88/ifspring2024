@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ATLA Initial Build</title>
+        <title>ATLA Home</title>
         <link rel="stylesheet" href="https://use.typekit.net/cwa5njv.css">
         <link rel="stylesheet" href="https://use.typekit.net/cwa5njv.css">
-        <link rel="stylesheet"  href="css/styles.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <div id="loading_screen">
@@ -21,20 +21,23 @@
         <section class="nav">
             <div>
                 <a href="index.html">
-                    <img id="nav-logo" src="../photos/Avatar_The_Last_Airbender_logo.png">
+                    <img id="nav-logo" src="../photos/white_logo.png">
                 </a>
-                <a href="index.html">Home</a>
-                <a href="tribes.html">Characters</a>
-                <a href="development.html">Development</a>
-                <a href="reviews.html">Reviews</a>
-                <a href="sources.html">Sources</a>
+                <a id="home" href="index.html">Home</a>
+                <a id="characters" href="characters.html">Characters</a>
+                <a id="development" href="development.html">Development</a>
+                <a id="reviews" href="reviews.html">Reviews</a>
+                <a id="sources" href="sources.html">Sources</a>
             </div>
         </section>
         <header>
-            <img class="slides" src="../photos/landscapebysea.jpeg">
-            <img class="slides" src="../photos/firenation.jpg">
-            <img class="slides" src="../photos/watertribe.webp">
-            <img class="slides" src="../photos/earthkingdom.jpg">
+            <img id="banner-logo" src="../photos/white_logo.png">
+            <div class="slider">
+                <img class="slides" src="../photos/landscapebysea.jpeg">
+                <img class="slides" src="../photos/firenation.jpg">
+                <img class="slides" src="../photos/watertribe.webp">
+                <img class="slides" src="../photos/earthkingdom.jpg">
+            </div>
         </header>
 
         <!-- automatic slider -->
@@ -55,7 +58,7 @@
             }
         </script>
 
-        <main>
+        <main id="main-home">
             <section class="home">
             <div class="synopsis">
                 <h2>synopsis</h2>
@@ -75,18 +78,18 @@
                 <p>The Avatar is an international arbiter whose duty is to maintain harmony among the four nations, and act as a mediator between humans and spirits. When the Avatar dies, their spirit is reincarnated in a new body, who will be born to parents in the next nation in a set order known as the Avatar cycle: Fire, Air, Water, and Earth. By tradition, the new Avatar will travel the world to learn all four bending arts, after which they will begin in earnest their role as global peacekeeper. The Avatar can enter a condition known as the "Avatar State", in which they temporarily gain the skills and knowledge of all their past incarnations. Although this is when they are at their most powerful, if the Avatar was ever killed while in the Avatar State, the reincarnation cycle would be broken and the Avatar would cease to exist.</p>
             </div>
         </section>
-        <section>
-            <img src="../photos/Aang_profile.webp">
-            <a href="tribes.html">Characters</a>
-        </section>
         </main>
+        <footer>
+            <p>Creative Director: Michelle Kwan</p>
+            <p>Designer: Michelle Chen</p>
+        </footer>
         <!-- increase  loading time of page -->
-        <div id="increase_time">
+        <!-- <div id="increase_time">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/OCIsqgJ8bXE?si=OfqohGKl039kVoLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/OCIsqgJ8bXE?si=OfqohGKl039kVoLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/OCIsqgJ8bXE?si=OfqohGKl039kVoLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/OCIsqgJ8bXE?si=OfqohGKl039kVoLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+        </div> -->
         <!-- preloader screen script , figure out how to fade out after loading is complete-->
         <script> 
             var loader = document.getElementById("loading_screen");
